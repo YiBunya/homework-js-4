@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="result"></p> -->   
+    
+
+    <input type="number" id="num"><button onclick="mul()">=</button>
+    <p id="result1"></p><br>
+    <script>
+        // let x=3 ;
+        // if(x==10){
+        //     console.log(x);
+        // }else{
+        //     console.log("x is not 10")
+        // }
+        // ------2----
+        // ?(x==10) ? console.log(x):console.log("x is not 10")
+        // -----3----
+        // switch(x){
+        //     case 1:
+        //         console.log('1');
+        //         break;
+            
+        //     case 2:
+        //         console.log('2');
+        //         break;
+            
+        //     case 3:
+        //         console.log('3');
+        //         break;
+            
+        //     default :{
+        //         console.log('x is out of range')
+        //     }
+        // }
+        // -------------------------------------------
+        // let a =18;
+        // let name = "case";
+
+        // document.getElementById('result').innerHTML = '<h1>'+'i am '+ a +'year old'+'</>';
+        // document.getElementById('result1').innerHTML = `<h1> My name ${name}  i am ${a} year old`;
+        // -----------------------------------------
+            
+       function mul(){
+            var num = document.getElementById('num').value;
+            var res =document.getElementById('result1');
+            for ( i = 1 ; i <= 10; i++){
+                result= i*num;
+                document.getElementById('result1').innerHTML += num + " X " +i+ " = " +result+ "<br>";
+            }
+       }
+    </script>
+</body>
+</html>
